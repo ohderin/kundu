@@ -1,11 +1,11 @@
 //Derin Ergul
 //CSC-1350, Kundu
 import java.util.Scanner;
-public class Binary4BitAdd {
- static int b13, b12, b11, b10, b23, b22, b21, b20;
+public class Binary4BitAdd
+{ static int b13, b12, b11, b10, b23, b22, b21, b20;
  static Scanner scan = new Scanner(System.in);
- public static void readInput() {
-  System.out.print("\nEnter the bits of two 4-bit binary integers separated by" +
+ public static void readInput()
+ { System.out.print("\nEnter the bits of two 4-bit binary integers separated by" +
                    " \" + \" \n    and a space between the bits: ");
   b13 = scan.nextInt();
   b12 = scan.nextInt();
@@ -17,11 +17,11 @@ public class Binary4BitAdd {
   b21 = scan.nextInt();
   b20 = scan.nextInt();
  }
- public static int binaryToDecimal(int b3, int b2, int b1, int b0) {
-  return (-8*b3 + 4*b2 + 2*b1 + b0);
+ public static int binaryToDecimal(int b3, int b2, int b1, int b0)
+ { return (-8*b3 + 4*b2 + 2*b1 + b0);
  }
- public static void addAndPrint() {
-  int b0, b1, b2, b3, carry;
+ public static void addAndPrint()
+ { int b0, b1, b2, b3, carry;
   b0 = b10 + b20;
   carry = b0/2;
   b0 = b0%2;
@@ -36,9 +36,9 @@ public class Binary4BitAdd {
   System.out.println("Binary sum: " + b3 + " " + b2 + " " + b1 +
                      " " + b0 + " = " + binaryToDecimal(b3, b2, b1, b0));            
  }
- public static void main(String[] args) {
-  for (int i = 0; i < 5; i++) {
-   readInput();
+ public static void main(String[] args)
+ { for (int i = 0; i < 5; i++)
+  { readInput();
    int first = binaryToDecimal(b13, b12, b11, b10),
        second = binaryToDecimal(b23, b22, b21, b20);
    System.out.println("1st 4-bit binary input integer: " + b13 + " " + 
