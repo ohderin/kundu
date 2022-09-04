@@ -66,5 +66,5 @@ public class ParkingTime {
                     numDimesObtained + "x11 + " + numNickelsObtained + "x5 = " + 
                     numMaxParkingMinutes + " (using " + numPenniesUsed + " pennies out of " +
                     numPenniesGiven + ")");
-    }
+  }
 }
