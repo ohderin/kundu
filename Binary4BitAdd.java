@@ -45,6 +45,7 @@ public class Binary4BitAdd
                       b12 + " " + b11 + " " + b10 + " = " + first);
    System.out.println("2nd 4-bit binary input integer: " + b23 + " " +
                       b22 + " " + b21 + " " + b20 + " = " + second);
+   addAndPrint();
   }
  }
 }
