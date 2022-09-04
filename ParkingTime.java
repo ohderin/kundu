@@ -1,9 +1,9 @@
 //Derin Ergul
 //CSC-1350, Kundu
 import java.util.Scanner;
-public class ParkingTime {
- public static void main(String[] args) {
-  int numDimesObtained, numMaxParkingMinutes, numNickelsObtained,
+public class ParkingTime
+{ public static void main(String[] args)
+  { int numDimesObtained, numMaxParkingMinutes, numNickelsObtained,
       numPenniesGiven, numPenniesRemaining, numPenniesUsed,
       numQuartersObtained;
   Scanner scan = new Scanner(System.in);
