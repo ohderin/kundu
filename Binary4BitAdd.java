@@ -6,7 +6,7 @@ public class Binary4BitAdd
  static Scanner scan = new Scanner(System.in);
  public static void readInput()
  { System.out.print("\nEnter the bits of two 4-bit binary integers separated by" +
-                   " \" + \" \n    and a space between the bits: ");
+                   " \" + \" \n      and a space between the bits: ");
   b13 = scan.nextInt();
   b12 = scan.nextInt();
   b11 = scan.nextInt();

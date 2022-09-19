@@ -3,6 +3,7 @@
 import java.util.Scanner;
 public class ParkingTime
 { public static void main(String[] args)
+  //variable declarations
   { int numDimesObtained, numMaxParkingMinutes, numNickelsObtained,
         numPenniesGiven, numPenniesRemaining, numPenniesUsed,
         numQuartersObtained;
@@ -18,8 +19,8 @@ public class ParkingTime
   numNickelsObtained = numPenniesRemaining / 5;
   numPenniesRemaining %= 5;
   numPenniesUsed = numPenniesGiven - numPenniesRemaining;
-  numMaxParkingMinutes = (numQuartersObtained * 30 + numDimesObtained * 11 +
-                          numNickelsObtained * 5);
+  numMaxParkingMinutes = numQuartersObtained * 30 + numDimesObtained * 11 +
+                          numNickelsObtained * 5;
   System.out.println("#(pennies used) = " + numQuartersObtained + "x25 + " + numDimesObtained + 
                      "x10 + " + numNickelsObtained + "x5 = " + numPenniesUsed);
   System.out.println("Max. #(parking minutes) = " + numQuartersObtained + "x30 + " +
