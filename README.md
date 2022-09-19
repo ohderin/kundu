@@ -1,6 +1,6 @@
 # Kundu's drunkest programmer
 ![ ](https://i.imgur.com/aZfkUVw.jpg)<sub>Looks okay?</sub>
-### ParkingTime
+### ParkingTime ***(COMPLETE)***
 - [x] main method vars and prompts
 - [x] num(COIN) calculations
 - [x] 2nd and 3rd numPenniesGiven
