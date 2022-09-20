@@ -3,7 +3,6 @@
 import java.util.Scanner;
 public class ParkingTime
 { public static void main(String[] args)
-  //variable declarations
   { int numDimesObtained, numMaxParkingMinutes, numNickelsObtained,
         numPenniesGiven, numPenniesRemaining, numPenniesUsed,
         numQuartersObtained;
