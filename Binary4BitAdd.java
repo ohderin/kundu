@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Binary4BitAdd
 { static int b13, b12, b11, b10,//First 4-bit integer
              b23, b22, b21, b20;//Second 4-bit integer
-  static Scanner scan = new Scanner(System.in);
-  
+
   public static void readInput()
   { System.out.print("\nEnter the bits of two 4-bit binary integers separated by" +
                      " \" + \" \n      and a space between the bits: ");
+  Scanner scan = new Scanner(System.in);
   b13 = scan.nextInt();
   b12 = scan.nextInt();
   b11 = scan.nextInt();
@@ -30,13 +30,13 @@ public class Binary4BitAdd
   b0 = b10 + b20;
   carry = b0/2;
   b0 = b0%2;
-  b1 = carry + b11 + b21;
+  b1 = b11 + b21 + carry;
   carry = b1/2;
   b1 = b1%2;
-  b2 = carry + b12 + b22;
+  b2 = b12 + b22 + carry;
   carry = b2/2;
   b2 = b2%2;
-  b3 = carry + b13 + b23;
+  b3 = b13 + b23 + carry;
   System.out.println("Binary sum: " + b3 + " " + b2 + " " + b1 +
                      " " + b0 + " = " + binaryToDecimal(b3, b2, b1, b0));            
   }
