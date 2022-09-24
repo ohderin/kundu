@@ -3,8 +3,8 @@
 
 import java.util.Scanner;
 public class Binary4BitAdd
-{ static int b13, b12, b11, b10,//First 4-bit integer
-             b23, b22, b21, b20;//Second 4-bit integer
+{ static int b13, b12, b11, b10, //First 4-bit binary integer
+             b23, b22, b21, b20; //Second 4-bit binary integer
 
   public static void readInput()
   { System.out.print("\nEnter the bits of two 4-bit binary integers separated by" +
@@ -43,14 +43,14 @@ public class Binary4BitAdd
   
   public static void main(String[] args)
   { for (int i = 0; i < 5; i++)
-    { readInput();
-      int first = binaryToDecimal(b13, b12, b11, b10),
-          second = binaryToDecimal(b23, b22, b21, b20);
-      System.out.println("1st 4-bit binary input integer: " + b13 + " " + 
-                        b12 + " " + b11 + " " + b10 + " = " + first);
-      System.out.println("2nd 4-bit binary input integer: " + b23 + " " +
-                        b22 + " " + b21 + " " + b20 + " = " + second);
-      addAndPrint();
+    {   readInput();
+        int first = binaryToDecimal(b13, b12, b11, b10),
+            second = binaryToDecimal(b23, b22, b21, b20);
+        System.out.println("1st 4-bit binary input integer: " + b13 + " " + 
+                           b12 + " " + b11 + " " + b10 + " = " + first);
+        System.out.println("2nd 4-bit binary input integer: " + b23 + " " +
+                           b22 + " " + b21 + " " + b20 + " = " + second);
+        addAndPrint();
     }
   }
 }
