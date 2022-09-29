@@ -31,7 +31,7 @@ public Binary4BitInt add(int b3, int b2, int b1, int b0)
   b2 += carry + this.b2;
   carry = b2/2;
   b2 %= 2;
-  b3 += (carry + this.b3) % 2;
+  b3 += (carry + this.b3) / 2;
   return (new Binary4BitInt(b3, b2, b1, b0));
 }
 
