@@ -22,20 +22,20 @@ public class Binary4BitAdd
   }
 
   public static int binaryToDecimal(int b3, int b2, int b1, int b0)
-  { return (-8*b3 + 4*b2 + 2*b1 + b0);
+  { return (-8 * b3 + 4 * b2 + 2 * b1 + b0);
   }
 
   public static void addAndPrint()
   { int b0, b1, b2, b3, carry;
   b0 = b10 + b20;
-  carry = b0/2;
-  b0 = b0%2;
+  carry = b0 / 2;
+  b0 = b0 % 2;
   b1 = b11 + b21 + carry;
-  carry = b1/2;
-  b1 = b1%2;
+  carry = b1 / 2;
+  b1 = b1 % 2;
   b2 = b12 + b22 + carry;
-  carry = b2/2;
-  b2 = b2%2;
+  carry = b2 / 2;
+  b2 = b2 % 2;
   b3 = (b13 + b23 + carry) % 2;
   System.out.println("Binary sum: " + b3 + " " + b2 + " " + b1 +
                      " " + b0 + " = " + binaryToDecimal(b3, b2, b1, b0));            
