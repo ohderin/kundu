@@ -5,19 +5,21 @@
 - [x] num(COIN) calculations
 - [x] 2nd and 3rd numPenniesGiven
 - [x] formatting
-### Binary4BitAdd
+### Binary4BitAdd (COMPLETE)
 - [x] main logic and variables
 - [x] binaryToDecimal function
 - [x] addAndPrint function
 - [x] loop
-- [ ] formatting
-### Binary4BitInt
+- [x] formatting
+### Binary4BitInt (COMPLETE)
 - [x] Binary4BitInt constructor
 - [x] toString function
 - [x] binaryToDecimal function
-- [ ] method add function
-- [ ] main for prompts and input
-- [ ] formatting
+- [x] method add function
+- [x] main for prompts and input
+- [x] formatting
 ### TriangleType
-- [ ] main function
-- [ ] logic and formatting
+- [x] main function
+- [x] constructor TriangleType
+- [x] triangleType function
+- [ ] sortLengths
