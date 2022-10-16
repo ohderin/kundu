@@ -2,8 +2,8 @@
 //CSC-1350, Kundu
 
 import java.util.Random;
-public class TriangleType {
-  int length, length2, length3;
+public class TriangleType 
+{ int length, length2, length3;
   String triangleType;
 
   public TriangleType(int minLength, int maxLength, int randomSeed) 
@@ -19,17 +19,26 @@ public class TriangleType {
     System.out.println("\nInitially: " + minLength + " <= length = " + length +
                        ", length2 = " + length2 + " <= " + maxLength + " and " +
                        minLength3 + " <= length3 = " + length3 + " <= " + maxLength3);
-    sortLengths(maxLength, maxLength3, minLength3);
+    sortLengths(length, length2, length3);
   }
 
   private void sortLengths(int max, int middle, int min)
-  { if (length3 < length2)
-    {  if (length2 < length)
-       {  middle = length2;
-       } else min = length2;
-    } else max = length2;
-    System.out.println("After sorting: length = " + min + ", length2 = " + 
-                       middle + ", length3 = " + max);
+  { if (length <= length2)
+       if (length <= length3)
+       {  min = length;
+          if (length2 <= length3) max = length3;
+          else max = length2;
+       }
+       else { min = length3; max = length2; }
+    else if (length2 <=length3)
+         {  min = length2; 
+            if (length <= length3) max = length3;
+            else max = length; 
+         }
+         else { max = length; min = length3; }
+         length = min; length2 = middle; length3 = max;
+    System.out.println("After sorting: length = " + length + ", length2 = " + 
+                       length2 + ", length3 = " + length3);
   }
 
   public void triangleType()
