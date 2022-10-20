@@ -26,7 +26,7 @@ public class TriangleType
   { if (length <= length2)
        if (length <= length3)
        {  min = length;
-          if (length2 <= length3) { max = length3; middle = length2; }
+          if (length2 <= length3) { middle = length2;max = length3; }
           else { middle = length3; max = length2; }
        }
        else { min = length3; middle = length; max = length2; }
