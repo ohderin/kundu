@@ -26,17 +26,17 @@ public class TriangleType
   { if (length <= length2)
        if (length <= length3)
        {  min = length;
-          if (length2 <= length3) { middle = length2; max = length3; }
-          else { middle = length3; max = length2; }
+          if (length2 <= length3) { max = length3; middle = length2; }
+          else { max = length2; middle = length3; }
        }
-       else { min = length3; middle = length; max = length2; }
+       else { max = length2; middle = length; min = length3; }
     else if (length2 <=length3)
          {  min = length2; 
-            if (length <= length3) { middle = length; max = length3; }
-            else middle = length3; max = length; 
+            if (length <= length3) { max = length3; middle = length; }
+            else max = length; middle = length3;
          }
-         else { min = length3; middle = length2; max = length; }
-         length = min; length2 = middle; length3 = max;
+         else { max = length; middle = length2; min = length3; }
+    length = min; length2 = middle; length3 = max;
     System.out.println("After sorting: length = " + length + ", length2 = " + 
                        length2 + ", length3 = " + length3);
   }
