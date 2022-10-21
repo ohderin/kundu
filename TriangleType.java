@@ -20,6 +20,7 @@ public class TriangleType
                        ", length2 = " + length2 + " <= " + maxLength + " and " +
                        minLength3 + " <= length3 = " + length3 + " <= " + maxLength3);
     sortLengths(length, length2, length3);
+    triangleType();
   }
 
   private void sortLengths(int max, int middle, int min)
@@ -53,7 +54,7 @@ public class TriangleType
 
   public static void main(String[] args)
   { for (int i = 0; i < 5; i++)
-        (new TriangleType(4, 20, i)).triangleType();
-    (new TriangleType(4, 4, 1)).triangleType();
+        new TriangleType(4, 20, i);
+    new TriangleType(4, 4, 1);
   }
 }
