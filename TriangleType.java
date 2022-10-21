@@ -2,7 +2,7 @@
 //CSC-1350, Kundu
 
 import java.util.Random;
-public class TriangleType 
+public class TriangleType
 { int length, length2, length3;
   String triangleType;
 
