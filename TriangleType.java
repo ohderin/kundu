@@ -19,12 +19,13 @@ public class TriangleType
     System.out.println("\nInitially: " + minLength + " <= length = " + length +
                        ", length2 = " + length2 + " <= " + maxLength + " and " +
                        minLength3 + " <= length3 = " + length3 + " <= " + maxLength3);
-    sortLengths(length, length2, length3);
+    sortLengths();
     triangleType();
   }
 
-  private void sortLengths(int max, int middle, int min)
-  { if (length <= length2)
+  private void sortLengths()
+  { int max, middle, min;
+    if (length <= length2)
        if (length <= length3)
        {  min = length;
           if (length2 <= length3) { max = length3; middle = length2; }
