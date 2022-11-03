@@ -29,7 +29,7 @@ public class TriangleType
        if (length <= length3)
        {  min = length;
           if (length2 <= length3) { max = length3; middle = length2; }
-          else { max = length2; middle = length3; }
+          else  max = length2; middle = length3; 
        }
        else { max = length2; middle = length; min = length3; }
     else if (length2 <=length3)
@@ -37,7 +37,7 @@ public class TriangleType
             if (length <= length3) { max = length3; middle = length; }
             else max = length; middle = length3;
          }
-         else { max = length; middle = length2; min = length3; }
+         else  max = length; middle = length2; min = length3; 
     length = min; length2 = middle; length3 = max;
     System.out.println("After sorting: length = " + length + ", length2 = " + 
                        length2 + ", length3 = " + length3);
