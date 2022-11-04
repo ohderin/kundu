@@ -18,8 +18,32 @@
 - [x] method add function
 - [x] main for prompts and input
 - [x] formatting
-### TriangleType
+### TriangleType (COMPLETE)
 - [x] main function
 - [x] constructor TriangleType
 - [x] triangleType function
-- [ ] sortLengths
+- [x] sortLengths
+### ~~ChooseSidesOfTriangle (COMPLETE)~~
+- [x] constructor
+- [x] constructor 2
+- [x] 3rd side function
+- [x] main 
+- [x] csot from sample
+### ~~CountTriangleTypes (COMPLETE)~~
+- [x] copy paste  
+- [x] fill in class
+- [x] fill count function
+- [x] complete main
+### BinaryAddition (COMPLETE)
+- [x] BinaryAddition constructor
+- [x] constructor for loop logic
+- [x] private binary conversion function
+- [x] main function
+- [x] formatting
+### BinaryAddition2 ()
+- [x] copy paste BinaryAddition
+- [x] swap int vars for array vars
+- [ ] addBinaryNums function
+- [ ] reverse binary conversion function
+- [ ] testAddition function
+- [ ] main function (testAdd call)
