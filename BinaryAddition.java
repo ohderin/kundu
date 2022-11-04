@@ -4,7 +4,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 public class BinaryAddition 
-{ final int binaryNum[], binaryNum2[];
+{ final int[] binaryNum, binaryNum2;
 
 public BinaryAddition(int numBits)
 { int powerOf2 = 1;
