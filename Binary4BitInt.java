@@ -1,4 +1,4 @@
-//Derin Ergul
+//Derin Ergul 
 //CSC-1350, Kundu
 
 import java.util.Scanner;
