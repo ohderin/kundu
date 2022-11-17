@@ -26,8 +26,8 @@ public BinaryAddition(int numBits)
 private static int[] decimalToBinary(int decNumber, int numBits, int minValue) 
 { int[] bits = new int[numBits]; 
   if (decNumber < 0) { bits[0] = 1; decNumber -= minValue; }
-  for (int i = numBits - 1; decNumber > 0; decNumber /= 2, i--) 
-      bits[i] = decNumber % 2;
+     for (int i = numBits - 1; decNumber > 0; decNumber /= 2, i--) 
+         bits[i] = decNumber % 2;
   return bits;
 }
 
