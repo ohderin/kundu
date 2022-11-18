@@ -56,11 +56,11 @@ public class BinaryAddition2
         binarySum = ba2.addBinaryNums();
         sum = ba2.binaryToDecimal(binarySum);
         if (-32 <= num + num2 && num + num2 <= 32)
-           System.out.println("binary sum-array : " + Arrays.toString(binarySum) + "; its decimal form " 
-                              + sum + " = num + num2");
+           System.out.println("binary sum-array : " + Arrays.toString(binarySum) + 
+                              "; its decimal form " + sum + " = num + num2");
         else 
-           System.out.println("binary sum-array : " + Arrays.toString(binarySum) + "; its decimal form " 
-                              + sum + " != num + num2");
+           System.out.println("binary sum-array : " + Arrays.toString(binarySum) + 
+                              "; its decimal form " + sum + " != num + num2");
     }
   }
 
