@@ -42,7 +42,7 @@ public class BinaryAddition2
   { int decNumber = binaryNum[binaryNum.length - 1];
     for (int i = binaryNum.length - 2; i > 0; i--)  
         if (1 == binaryNum[i]) decNumber += powerOf2Factors[i];
-        if (1 == binaryNum[0]) decNumber -= powerOf2Factors[0];
+    if (1 == binaryNum[0]) decNumber -= powerOf2Factors[0];
     return decNumber;
   }
 
