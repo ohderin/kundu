@@ -28,7 +28,7 @@ public class BinaryAddition2
   }
 
   public int[] addBinaryNums()
-  { int bitSum, carry = 0, binarySum[] = new int[binaryNum.length];
+  { int binarySum[] = new int[binaryNum.length], bitSum, carry = 0;
     for (int i = binaryNum.length - 1; i >= 1; i--)
     {   bitSum = binaryNum[i] + binaryNum2[i] + carry;
         carry = bitSum / 2;
@@ -47,12 +47,11 @@ public class BinaryAddition2
   }
 
   public static void testAddition2()
-  { int num, num2, sum, numBits = 6, binarySum[], 
-        integerPairs[][] = {{-15, -20}, {0, 16}, {-32, 17}, {-17, 31}, {-13, -19}};
+  { int binarySum[], integerPairs[][] = {{-15, -20}, {0, 16}, {-32, 17}, {-17, 31}, {-13, -19}}, 
+        num, num2, numBits = 6, sum;
     BinaryAddition2 ba2;
     for (int i = 0; i < integerPairs.length; i++)
-    {   num = integerPairs[i][0];
-        num2 = integerPairs[i][1];
+    {   num = integerPairs[i][0]; num2 = integerPairs[i][1];
         ba2 = new BinaryAddition2(num, num2, numBits);
         binarySum = ba2.addBinaryNums();
         sum = ba2.binaryToDecimal(binarySum);
