@@ -28,13 +28,13 @@ public class BinaryAddition2
   }
 
   public int[] addBinaryNums()
-  { int binarySum[] = new int[binaryNum.length], bitSum, carry = 0;
-    for (int i = binaryNum.length - 1; i >= 1; i--)
-    {   bitSum = binaryNum[i] + binaryNum2[i] + carry;
-        carry = bitSum / 2;
+  { int binarySum[] = new int[binaryNum.length], bitSum = 0;
+    binarySum[binaryNum.length - 1] = binaryNum[binaryNum.length - 1] + binaryNum2[binaryNum.length - 1];
+    for (int i = binaryNum.length - 2; i >= 1; i--)
+    {   bitSum = binaryNum[i] + binaryNum2[i] + bitSum / 2;
         binarySum[i] = bitSum % 2;
     }
-    binarySum[0] = (binaryNum[0] + binaryNum2[0] + carry) % 2;
+    binarySum[0] = (binaryNum[0] + binaryNum2[0] + bitSum / 2) % 2;
     return (binarySum);
   }
 
