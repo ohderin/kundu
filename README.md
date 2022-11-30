@@ -40,10 +40,10 @@
 - [x] private binary conversion function
 - [x] main function
 - [x] formatting
-### BinaryAddition2 ()
+### BinaryAddition2 (COMPLETE)
 - [x] copy paste BinaryAddition
 - [x] swap int vars for array vars
-- [ ] addBinaryNums function
-- [ ] reverse binary conversion function
-- [ ] testAddition function
-- [ ] main function (testAdd call)
+- [x] addBinaryNums function
+- [x] reverse binary conversion function
+- [x] testAddition function
+- [x] main function (testAdd call)
