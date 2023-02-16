@@ -32,7 +32,7 @@ public class TriangleType
           else  max = length2; middle = length3; 
        }
        else { max = length2; middle = length; min = length3; }
-    else if (length2 <=length3)
+    else if (length2 <= length3)
          {  min = length2; 
             if (length <= length3) { max = length3; middle = length; }
             else max = length; middle = length3;
@@ -48,7 +48,7 @@ public class TriangleType
        if (length == length3) triangleType = "equilateral";
        else triangleType = "isosceles"; 
     else if (length2 == length3) triangleType = "isosceles";
-         else triangleType = "scelene";
+         else triangleType = "scalene";
     System.out.println("The triangle (" + length + ", " + length2 + 
                        ", " + length3 + ") is " + triangleType  + ".");
   }
